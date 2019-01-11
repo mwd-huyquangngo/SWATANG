@@ -1,0 +1,8 @@
+<div class="form-group" [formGroup]="parentGroup">
+  <label for="{{name}}">{{label}}</label>
+  <textarea rows="{{rows}}" formControlName="{{name}}" class="form-control" [ngClass]="{'is-invalid': submitted && parentGroup.get(name).errors}"></textarea>
+  <div *ngIf="submitted && parentGroup.get(name).errors" class="invalid-feedback">
+    <div *ngIf="parentGroup.get(name).errors.required">The bio is required.</div>
+    <div *ngIf="parentGroup.get(name).errors.maxlength">Maximum length of bio is 255 characters.</div>
+  </div>
+</div>

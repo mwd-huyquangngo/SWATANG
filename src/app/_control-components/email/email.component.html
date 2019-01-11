@@ -1,0 +1,8 @@
+<div class="form-group" [formGroup]="parentGroup">
+  <label for="{{name}}">{{label}}</label>
+  <input type="text" formControlName="{{name}}" class="form-control" [ngClass]="{'is-invalid': submitted && parentGroup.get(name).errors}" />
+  <div *ngIf="submitted && parentGroup.get(name).errors" class="invalid-feedback">
+    <div *ngIf="parentGroup.get(name).errors.required">Email is required.</div>
+    <div *ngIf="parentGroup.get(name).errors.email">Please provide a valid email address.</div>
+  </div>
+</div>

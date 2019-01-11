@@ -1,0 +1,47 @@
+1. Achievement items:
++ DevOps:
+  - CI: pipelines, Jobs
+  - Deloy web application by Docker
+  - Environment: Staging
+
++ Development:
+  - General architecture
+  - Component life cycle
+  - HTTP Client module to call API
+  - Using Guard protect
+  - Implement, using service, component
+  - Review code process
+  - JWT token
+  - Code folow
+  - Get knowledge about developing web application
+  - Using outlet in view
+  - Observable pattern
+  - Using interceptor
+  - Implement Rest API using NodeJS, MongoDB
+
+
+2. Faced Issues:
++ DevOps:
+  - Performance of DevOps => run DevOps for pull request only
+  - No license for GitLab => ignore
+
++ Development:
+  - HTML, CSS
+  - Lint tool
+  - Review checklist => make checklist for reviewing
+  - Collaboration => active raise issue, daily meeting: doing, impediment
+  - PR is not reviewed soon => cross review, assign member to review. Luong => Y => Huy => Khanh => Luan => Luong
+  - Analysis requirement not good: not feedback, not recognize, assumption => no assumption, feedback PO
+  - Unit test: don't know how to unit test web app => Learn unit test knowledge
+
+3. Improvement:
++ DevOps:
+  - Optimize board as sprint => manage tasks
+  - Intergrate Slack => notify when have updating
+
++ Development:
+  - Improve Angular knowledge
+  - Unit test
+  - Improve HTML, CSS
+  - Improvement code quality
+  - Javascript ES6
