@@ -1,0 +1,26 @@
+<div class="container page">
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+      <h2>Update Profile</h2>
+      <form [formGroup]="updateProfileForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input type="hidden" formControlName="id" class="form-control"/>
+        </div>
+        
+        <app-name-input-form-control [submitted]="submitted" [parentGroup]="updateProfileForm"></app-name-input-form-control>
+
+        <app-bio-input-form-control [submitted]="submitted" [parentGroup]="updateProfileForm" [rows]="5"></app-bio-input-form-control>
+
+        <app-company-input-form-control [submitted]="submitted" [parentGroup]="updateProfileForm"></app-company-input-form-control>
+
+        <app-location-input-form-control [submitted]="submitted" [parentGroup]="updateProfileForm"></app-location-input-form-control>
+
+        <div class="form-group">
+          <button [disabled]="loading" class="btn btn-primary">Update Profile</button>
+          <a routerLink="/" class="btn btn-link">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <app-loading [visible]="loading"></app-loading>
+</div>

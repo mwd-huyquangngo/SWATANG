@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { User } from './_models';
-import { AuthenticationService } from './_services';
+import { User } from '@core/models';
+import { AuthenticationService } from '@core/services';
 
 @Component({ selector: 'app-swatang', templateUrl: 'app.component.html' })
 export class AppComponent {
@@ -17,6 +17,6 @@ export class AppComponent {
 
   logout() {
     this.authenticationService.logout();
-    this.router.navigate(['/login']);
+    this.router.navigate(['auth/login']);
   }
 }

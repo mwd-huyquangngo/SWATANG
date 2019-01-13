@@ -93,6 +93,7 @@
     "no-unused-variable": {
       "severity": "warn"
     },
-    "indent": [true, "spaces", 2]
+    "indent": [true, "spaces", 2],
+    "ordered-imports": false
   }
 }
